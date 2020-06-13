@@ -1,10 +1,17 @@
 import React from "react";
 
 function Nav() {
+  let time = "morning";
+  if (new Date().getHours() >= 17) {
+    time = "night";
+  } else {
+    time = "afternoon";
+  }
+
   return (
-    <footer>
-      <h3>this is my nav</h3>
-    </footer>
+    <header>
+      <h3 className="navbar">Good {time}</h3>
+    </header>
   );
 }
 
