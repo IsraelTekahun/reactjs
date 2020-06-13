@@ -2,22 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import MyInfo from "./components/MyInfo";
+import Footer from "./components/Footer";
 import * as serviceWorker from "./serviceWorker";
-
-function MyInfo() {
-  return (
-    <div>
-      <h1>Israel Tekahun</h1>
-      <p>ሰላም፣ እስራኤል ነኝ፡፡ እንኳን ደህና መጡ!</p>
-      <p>Below are the places I would like to visit</p>
-      <ul>
-        <li>Ethiopia</li>
-        <li>Ethiopia</li>
-        <li>Ethiopia</li>
-      </ul>
-    </div>
-  );
-}
 
 ReactDOM.render(<MyInfo />, document.getElementById("root"));
 
