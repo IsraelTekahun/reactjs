@@ -8,10 +8,14 @@ function App(props) {
   //ans = "none";
   //}
 
+  /*two ways to do it*/
+  //1. <p style={{ display: props.joke.answer ? "block" : "none" }}> Answer: {ans}</p>
+  //2. <p style={{ display: !props.joke.answer && "none" }}> Answer: {ans}</p>
+
   return (
     <div>
       <p>question: {props.joke.question}</p>
-      <p style={{ display: props.joke.answer ? "block" : "none" }}> {ans}</p>
+      <p style={{ display: !props.joke.answer && "none" }}> Answer: {ans}</p>
       <hr />
     </div>
   );
