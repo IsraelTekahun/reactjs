@@ -1,7 +1,7 @@
 import React from "react";
 
 function App(props) {
-  console.log(props);
+  //console.log(props);
 
   let ans = props.joke.answer;
   //if (!props.joke.answer) {
